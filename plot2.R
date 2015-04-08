@@ -18,7 +18,7 @@ y <- work.data$Global_active_power
 png("plot2.png")
 plot(x,y,
      type="n",
-     xlab=",",
+     xlab="",
      ylab="Global Active Power (kilowatts)")
 lines(x,y)
 dev.off()
