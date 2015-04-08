@@ -1,6 +1,4 @@
-#stub for plot1
 
-library(magrittr)
 
 test <- read.table("household_power_consumption.txt",
                    sep=";",
@@ -14,7 +12,9 @@ work.data <- work.data[work.data$Date == "2007-02-01" |
 
 rm(test)
 
+png("plot1.png")
 hist(work.data$Global_active_power,
      col = "red",
      xlab = "Global Active Power (kilowatts)",
      main = "Global Active Power")
+dev.off()
