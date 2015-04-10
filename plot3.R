@@ -10,13 +10,11 @@ work.data <- work.data[work.data$Date == "2007-02-01" |
 
 rm(test)
 
-
 png("plot3.png")
 
 x <- strptime(paste(work.data$Date,work.data$Time,sep=" "),
               format="%Y-%m-%d %H:%M:%S")
 y <- work.data$Sub_metering_1
-
 
 plot(x,y,
      type="n",
