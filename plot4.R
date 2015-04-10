@@ -43,6 +43,7 @@ legend("topright",
        lty="solid",
        bty="n",
        col=c("black","red","blue"),
+       cex = 0.95,
        legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 y <- work.data$Voltage
